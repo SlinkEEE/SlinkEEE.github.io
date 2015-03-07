@@ -1,0 +1,79 @@
+body {
+/* background image	
+	background-image: url("../img/background.jpg");
+*/
+
+	background: linear-gradient(#FFF0F0, #9BB4E6);
+	margin-left: 50px;
+	margin-bottom: 100%;
+}
+
+div {
+	margin-right:25px;
+}
+
+}
+h1{
+	font-family: 'Droid Serif', serif;
+	font-size: 38px;
+	margin-bottom: 5px;
+	color: #5F5F5F;
+}
+
+h2 {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 24px;
+	letter-spacing: 2px;
+	color: #6F6F6F;
+	margin-top: 5px;
+
+
+}
+
+h3 {
+	font-family: 'Fira Sans', sans-serif;
+	color: #5F5F5F;
+	margin-top: 1px;
+	margin-bottom: 5px;
+}
+
+h4 {
+	font-family: helvetica, sans-serif;
+	color: #778899;
+	margin-top: 1px;
+	margin-bottom: 5px;
+}
+
+h5 {
+	font-family: helvetica, sans-serif;
+	color: #778899;
+	margin-top: 1px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+	color: #778899;
+	line-height: 20px;
+	width: 808px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* fun with links */
+
+a:link {
+	text-decoration: none;
+	font-weight: bold;
+	color: #5C85AD;
+}
+
+
+a:visited {
+	color: #5C85AD;
+}
+
+a:hover {
+    color: #1C2834;
+}
