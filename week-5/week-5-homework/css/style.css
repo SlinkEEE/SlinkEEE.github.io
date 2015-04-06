@@ -1,0 +1,194 @@
+/*Sitewide styles*/
+body {
+	width: 960px;
+	padding-left: 50px;
+	font-family: Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0px 0px 10px 10px;
+	font-size: 18px;
+}
+
+.clear {
+	clear: both;
+}
+
+
+.logo {
+	float: left;
+	width: 166px;
+	overflow: hidden;
+
+}
+
+.wordmark {
+	float: left;
+
+}
+
+h1 {
+	font-size: 64px;
+	font-family: 'Montserrat Subrayada', sans-serif;
+	font-weight: 700;
+	margin: 0px;
+}
+
+h1 a {
+	color: red;
+}
+
+.tagline {
+	margin: 0px;
+}
+
+/*Navigation stuffs*/
+nav {
+	display: block;
+	background-color: #4682B4;
+	text-align: center;
+	margin: 20px 0px;
+	padding: 20px;
+}
+
+nav a {
+	color: #eeeeee;
+	font-family: "Montserrat", sans-serif;
+	font-size: 22px;
+	padding: 20px;
+
+}
+
+nav a:hover {
+	background-color: #D0DCEB;
+	color: #000;
+}
+
+/*Personal info section stuff*/
+.headshot {
+	float: left;
+	width: 300px;
+	box-shadow: -10px 10px 10px #888888;
+}
+
+.info {
+	display: block;
+	float: left;
+	margin-left: 30px;
+	width: 630px;
+
+}
+
+h3 {
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	padding: 10px;
+	margin: 0px;
+}
+
+.quote {
+	background-color: #D0DCEB;
+	font-size: 28px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin: 0px;
+	padding: 20px 0px 20px 0px;
+	text-align: center;
+}
+
+.box1 {
+	float: left;
+	background-color: #D0DCEB;
+	margin: 10px 10px 10px 0px;
+	width: 310px;
+}
+
+.box2 {
+	float: left;
+	background-color: #D0DCEB;
+	margin-top: 10px;
+	width: 310px;
+}
+
+.box3 {
+	background-color: #D0DCEB;
+}
+
+ul {
+	padding-bottom: 18px;
+	margin: 0px 0px 20px 0px;
+}
+
+ul li {
+	list-style-type: square;
+	font-size: 18px;
+}
+
+
+.decision h2 {
+	display: block;
+	float: left;
+	width: 300px;
+	margin: 0px;
+	font-family: 'Montserrat Subrayada', sans-serif;
+	font-size: 28px;
+	color: #4682B4;
+}
+
+.decision span {
+	color: black;
+	font-size: 22px;
+	font-family: "Montserrat", sans-serif;
+
+}
+
+.decision a {
+	opacity: 0.80;
+}
+
+.decision a:hover {
+	opacity: 1.0;
+}
+
+.no {
+	display: block;
+	float: left;
+	width: 250px;
+	text-align: center;
+	margin: 0px 30px 30px;
+}
+
+.yes {
+	display: block;
+	float: left;
+	width: 250px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+footer {
+	background-color: #4682B4;
+	text-align: right;
+	padding: 30px 0px;
+}
+
+footer a {
+	color: white;
+	padding: 30px;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
