@@ -1,8 +1,9 @@
 /*Sitewide styles*/
 body {
 	width: 960px;
-	padding-left: 50px;
+	margin: auto;
 	font-family: Arial, sans-serif;
+	background-image: url("../img/sky.png");
 }
 
 a {
@@ -23,7 +24,6 @@ p {
 	float: left;
 	width: 166px;
 	overflow: hidden;
-
 }
 
 .wordmark {
@@ -46,11 +46,10 @@ h1 a {
 	margin: 0px;
 }
 
-/*Navigation stuffs*/
 nav {
 	display: block;
 	background-color: #4682B4;
-	text-align: center;
+	text-align: right;
 	margin: 20px 0px;
 	padding: 20px;
 }
@@ -59,8 +58,7 @@ nav a {
 	color: #eeeeee;
 	font-family: "Montserrat", sans-serif;
 	font-size: 22px;
-	padding: 20px;
-
+	padding: 20px 28px;
 }
 
 nav a:hover {
@@ -68,7 +66,6 @@ nav a:hover {
 	color: #000;
 }
 
-/*Personal info section stuff*/
 .headshot {
 	float: left;
 	width: 300px;
@@ -98,7 +95,6 @@ h3 {
 	font-weight: 700;
 	margin: 0px;
 	padding: 20px 0px 20px 0px;
-	text-align: center;
 }
 
 .box1 {
@@ -129,14 +125,13 @@ ul li {
 	font-size: 18px;
 }
 
-
 .decision h2 {
 	display: block;
 	float: left;
 	width: 300px;
 	margin: 0px;
 	font-family: 'Montserrat Subrayada', sans-serif;
-	font-size: 28px;
+	font-size: 30px;
 	color: #4682B4;
 }
 
@@ -169,14 +164,6 @@ ul li {
 	width: 250px;
 	text-align: center;
 }
-
-
-
-
-
-
-
-
 
 footer {
 	background-color: #4682B4;
