@@ -1,0 +1,83 @@
+body {
+	background-color: #2ECC71;
+    color: #444444;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-bottom: 50px;
+ }
+
+#wrapper {
+	width: 640px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: "Montserrat",Arial,sans-serif;
+	text-align: center;
+	color: #ffffff;
+	font-size: 64px;
+	margin: 20px 0;
+	text-shadow: 0 5px 1px #27AE60;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav {
+	font-family: "Montserrat",Arial,sans-serif;
+    background-color: #27AE60;
+    font-size: 18px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#lorem .lorem, #hipster .hipster, #bacon .bacon, #beer .beer {
+	color: #F8FF73;
+}
+
+.ipsum {
+	background-color: #FFFFFF;
+    padding: 40px;
+    display: none;
+}
+
+p {
+	padding-bottom: 14px;
+	display: none;
+}
+
+#form {
+	margin: 20px 0;
+	overflow: hidden;
+	background-color: #cccccc;
+}
+
+#form input {
+	width: 49%;
+	font-size: 30px;
+	border: none;
+	margin: 0;
+	text-align: center;
+	color: #ffffff;
+	float: left;
+	height: 50px;
+}
+
+#form input[type="text"] {
+	background-color: #dddddd;
+}
+
+#form input[type="submit"] {
+	background-color: #cccccc;
+}
