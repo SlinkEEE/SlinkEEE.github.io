@@ -115,7 +115,7 @@ p {
 }
 
 .button {
-	display:block;
+	display: inline-block;
 	width: 13em;
 	height: 2.5em;
 	line-height: 2.5em;
@@ -139,6 +139,7 @@ p {
 .blurb .button {
 	background-color: yellow;
 	border-bottom: .3em solid #CCCC00;
+	margin: 0;
 }
 
 .callouts {
@@ -264,5 +265,14 @@ footer {
 	h3 {
 		margin-top: 1em;
 	}
+
+}
+
+@media only screen and (max-width: 545px) {
+	.blurb .button {
+		margin: 0;
+		width: auto;
+		padding: 0 1em;
+}
 
 }
