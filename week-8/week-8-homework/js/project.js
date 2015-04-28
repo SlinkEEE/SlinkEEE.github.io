@@ -2,7 +2,6 @@ $(document).ready(function() {
 	cow1();
 	horse();
 	farmer();
-	// cow3();
 	
 
 	function cow1() {
