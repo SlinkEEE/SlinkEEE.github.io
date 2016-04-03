@@ -1,0 +1,99 @@
+
+body {
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	color: #666;
+}
+
+#header {
+	background-color: #F5F5F5;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 28px;
+	padding: 1em 0 0.5em 0;
+}
+
+h2 {
+	font-size: 22px;
+	padding: 0 0 1em 0;
+}
+
+p {
+	font-size: 18px;
+	padding: 0 0 2em 0;
+}
+
+#container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.gamecard {
+	border-spacing: 10px;
+	border-collapse: separate;
+	float: right;
+	width: 500px;
+	margin-right: 20px;
+}
+
+td {
+    height: 150px;
+    width: 150px;
+    background: #ccc;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    vertical-align: middle;
+    position: static;
+}
+
+td:hover {
+	background-color: #c4f8ff;
+}
+
+.match {
+	background-color: #00DFFF;
+}
+
+.match:hover {
+	background-color: #00DFFF;
+}
+
+#buttonsContainer {
+	display: inline-block;
+}
+/*  #scoreboard {
+    height: 200px;
+    width: 100px;
+    background: rgba(34,34,34,0.6);
+    font: 12px roboto;
+    text-align: center;
+    color: #FFF;
+    .title { padding-top: 9px; letter-spacing: 1px; }
+    .score { font-size: 30px; }*/
+
+
+
+input {
+	display: block;
+	background-color: #FFF;
+	border: 3px solid #00DFFF;
+	font: bold 16px Arial;
+	line-height: 2em;
+	width: 150px;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+input:hover {
+	background-color: #00DFFF;
+	color: #FFF;
+}
+
+input:focus {
+	outline: none;
+}
