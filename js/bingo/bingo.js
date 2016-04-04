@@ -11,7 +11,7 @@ var boxContent = [
 	"I'm gonna get fired",
 	"whurt der furk",
 	"duck programming",
-	"uhhh... gentlemen?"
+	"uhhh... gentlemen?",
 	];
 
 //array containing arrays of all the winning combos
@@ -33,10 +33,8 @@ var bingoCombos = winners.length;
 //array to store the boxes that have been clicked
 var matched = [];
 
-
-
-// load the page with ready-to-play bingo squares
-generateCard();
+//variable to store the score count
+var scoreCount = 0;
 
 function generateCard() {
 
@@ -99,8 +97,13 @@ $("td").on("click", function() {
 				//if there are 3 matches...
 				if(matches == 3) {
 					alert("bingo!");
+					scoreCount++;
+					
+					$("#score").html(scoreCount);
+
 					clearCard();
 					generateCard();
+					
 
 
 				}
@@ -125,31 +128,6 @@ function clearCard() {
 	$("td").removeClass("match");
 	matched = [];
 }
-
-
-
-
-
-
-
-
-
-// 1. create second bingo board
-// 2. create a button that when you click it 
-// 	1. displays one of the items from the bingo array
-// 	2. crosses off that item on the bingo boards
-// 	3. remove that item from the bingo array so it doesn't get called again
-// 	4. runs a function that checks if either of the bingo boards have a complete row checked off (this will be its own step becuase it is big!)
-// 3. bingo board checker mentioned above.
-// 4. do some action if one of the boards is the winner
-// more ideas:
-// add a scoreboard with firebase
-// allow users to input ideas into the bingo card array
-// what happens when a user wins? play again?
-
-
-
-
 
 
 

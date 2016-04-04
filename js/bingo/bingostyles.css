@@ -20,10 +20,12 @@ h2 {
 	padding: 0 0 1em 0;
 }
 
+
 p {
 	font-size: 18px;
 	padding: 0 0 2em 0;
 }
+
 
 #container {
 	width: 50%;
@@ -63,20 +65,28 @@ td:hover {
 	background-color: #00DFFF;
 }
 
-#buttonsContainer {
+#sidebar {
 	display: inline-block;
 }
-/*  #scoreboard {
-    height: 200px;
-    width: 100px;
-    background: rgba(34,34,34,0.6);
-    font: 12px roboto;
-    text-align: center;
-    color: #FFF;
-    .title { padding-top: 9px; letter-spacing: 1px; }
-    .score { font-size: 30px; }*/
 
+h3 {
+	margin-bottom: 0;
+	font-size: 16px;
+	line-height: 2em;
+	padding: 5px 0;
+	width: 150px;
+	background-color: #000;
+	color: #DDD;
+}
 
+#score {
+	margin: 0;
+	padding: 25%;
+	background-color: #333;
+	color: #FFF;
+	text-align: center;
+	font: bold 44px Arial;
+}
 
 input {
 	display: block;
