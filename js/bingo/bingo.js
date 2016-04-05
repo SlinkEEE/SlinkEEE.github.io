@@ -2,7 +2,6 @@ $(document).ready(function() {
 
 //hide the success message
 $("#success").hide();
-
 //hello firebase
 var firebase = new Firebase("https://slinkeee-js.firebaseIO.com");
 
@@ -19,6 +18,7 @@ var boxContent = [
 	"run it up the flagpole",
 	"open kimono",
 	];
+generateCard()
 
 //array containing arrays of all the winning combos
 //access specific boxes like so: (winners[0][2]) ==> "box2"
