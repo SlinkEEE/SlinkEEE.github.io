@@ -132,3 +132,12 @@ input:focus {
 	border-bottom: 3px solid #00DFFF;
 	margin-bottom: 8px;
 }
+
+#success {
+	background-color: #00ff78;
+	color: #000;
+	font: bold 14px Arial;
+	margin-top: -5px;
+	padding: 5px 0;
+
+}

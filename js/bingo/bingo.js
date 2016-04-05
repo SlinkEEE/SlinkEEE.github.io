@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+//hide the success message
+$("#success").hide();
+
 //hello firebase
 var firebase = new Firebase("https://slinkeee-js.firebaseIO.com");
 
@@ -82,7 +85,7 @@ $("#submit").click(function() {
 		firebase.push({quote: userContent});
 
 		$("#userContent").val("");
-		alert("added to firebase");
+		$("#success").fadeIn(900).fadeOut();
 	}
 
 });
