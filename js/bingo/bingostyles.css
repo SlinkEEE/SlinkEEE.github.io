@@ -32,7 +32,7 @@ p {
 	margin: 0 auto;
 }
 
-.gamecard {
+#gamecard {
 	border-spacing: 10px;
 	border-collapse: separate;
 	float: right;

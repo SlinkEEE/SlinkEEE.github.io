@@ -62,7 +62,7 @@ function generateCard() {
 	//loop through the box numbers
 	for (var j = 0; j < boxContent.length; j++) {
 		//load up the squares with the newly shuffled array
-		$("#gamecard-1 #box" + j).html(boxContent[j]);
+		$("#gamecard #box" + j).html(boxContent[j]);
 	}
 }
 
