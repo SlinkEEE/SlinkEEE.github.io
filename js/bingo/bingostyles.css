@@ -67,6 +67,9 @@ td:hover {
 
 #sidebar {
 	display: inline-block;
+	width: 170px;
+	margin-top: 10px;
+	text-align: center;
 }
 
 h3 {
@@ -74,17 +77,21 @@ h3 {
 	font-size: 16px;
 	line-height: 2em;
 	padding: 5px 0;
-	width: 150px;
 	background-color: #000;
 	color: #DDD;
 }
 
+h4 {
+	font-size: 14px;
+	margin: 0 0 5px 0;
+	text-align: left;
+}
+
 #score {
-	margin: 0;
+	margin: 0 0 20px 0;
 	padding: 25%;
 	background-color: #333;
 	color: #FFF;
-	text-align: center;
 	font: bold 44px Arial;
 }
 
@@ -94,16 +101,34 @@ input {
 	border: 3px solid #00DFFF;
 	font: bold 16px Arial;
 	line-height: 2em;
-	width: 150px;
-	margin: 10px 0;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 0;
 	cursor: pointer;
 }
 
-input:hover {
+input[type="submit"]:hover {
 	background-color: #00DFFF;
 	color: #FFF;
 }
 
 input:focus {
 	outline: none;
+}
+
+#userContent {
+	cursor: default;
+	border: 1px solid #00DFFF;
+	font-weight: normal;
+	text-align: center;
+}
+
+#userContent:hover {
+	cursor: text;
+}
+
+#userContent:focus {
+	cursor: text;
+	border-bottom: 3px solid #00DFFF;
+	margin-bottom: 8px;
 }

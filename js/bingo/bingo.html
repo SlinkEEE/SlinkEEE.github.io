@@ -3,10 +3,10 @@
 <head>
 	<title>Lingo Bingo</title>
 
-	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="bingostyles.css" />
-		<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script type="text/javascript" src="bingo.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 </head>
 
 
@@ -15,9 +15,9 @@
 
 
 <div id="header">
-	<h1>Bobby Tables lingo bingo</h1>
-	<h2>an improvement on giphy /drink</h2>
-	<p>Are you paying attention in JS-1? Get three buzzwords in a row to win!</p>
+	<h1>Brunswick lingo bingo</h1>
+	<h2>an improvement on the Monday Morning Meeting</h2>
+	<p>Get three buzzwords in a row to win!</p>
 </div>
 
 <div id="container">
@@ -27,6 +27,9 @@
 	<input name="clearCard" type="submit" value="CLEAR CARD"></input>
 	<h3>SCORE</h3>
 	<p id="score">0</p>
+	<h4>ADD SOME CORPORATE JARGON OF YOUR OWN:</h4>
+	<input type="text" id="userContent" placeholder="type yo' jargon"></input>
+	<input type="submit" id="submit" value="SUBMIT"></input>
 </div>
 
 	  	<table id="gamecard-1" class=

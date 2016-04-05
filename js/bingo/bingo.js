@@ -1,17 +1,20 @@
 $(document).ready(function() {
 
+//hello firebase
+var firebase = new Firebase("https://slinkeee-js.firebaseIO.com");
+
 //array with the content for the bingo squares
 var boxContent = [
-	"I'll buy it tomorrow",
-	"Hello...",
-	"Namely",
-	"wat.",
-	"this is totally legal",
-	"we're doing it live",
-	"I'm gonna get fired",
-	"whurt der furk",
-	"duck programming",
-	"uhhh... gentlemen?",
+	"centers of excellence",
+	"ecosystem",
+	"soup to nuts",
+	"marinate",
+	"unpack",
+	"mindshare",
+	"mission-critical",
+	"talking out loud",
+	"run it up the flagpole",
+	"open kimono",
 	];
 
 //array containing arrays of all the winning combos
@@ -58,18 +61,39 @@ function generateCard() {
 		//load up the squares with the newly shuffled array
 		$("#gamecard-1 #box" + j).html(boxContent[j]);
 	}
-
 }
 
-//both buttons will Clear the card and remove matched elements
-$("input").click(function() {
+//the clearCard button removes matched boxes
+$("input[name = 'clearCard']").click(function() {
 	clearCard();
 });
 
 //the newCard button also rolls a new bingo card
 $("input[name = 'newCard']").on("click", function() {
+	clearCard();
 	generateCard();
 });
+
+//the submit button...
+$("#submit").click(function() {
+	if($("#userContent").val() !== "") {
+		//adds the new input to firebase
+		var userContent = $("#userContent").val();
+		firebase.push({quote: userContent});
+
+		$("#userContent").val("");
+		alert("added to firebase");
+	}
+
+});
+
+//firebase pushes new additions to the boxContent array
+firebase.on("child_added", function(snapshot) {
+	var newContent = snapshot.val();
+	boxContent.push(newContent.quote);
+});
+
+
 
 //when user clicks a box...
 $("td").on("click", function() {
@@ -103,14 +127,9 @@ $("td").on("click", function() {
 
 					clearCard();
 					generateCard();
-					
-
-
 				}
 			}
-
 	}
-
 });
 
 //add/remove boxes from the "matched" array

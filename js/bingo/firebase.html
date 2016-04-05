@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>firebase check</title>
+</head>
+<body>
+	<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
+	<input type="text" id="userContent"></input>
+	<input type="submit" id="submit"></input>
+
+
+	<script>
+		var firebase = new Firebase("https://slinkeee-js.firebaseIO.com");
+		var boxContent = [
+		"centers of excellence",
+		"ecosystem",
+		"soup to nuts",
+		"marinate",
+		"unpack",
+		"mindshare",
+		"mission-critical",
+		"talking out loud",
+		"run it up the flagpole",
+		"open kimono",
+		];
+
+		$("#submit").click(function() {
+			if($("#userContent").val() !== "") {
+				var userContent = $("#userContent").val();
+				firebase.push({quote: userContent});
+
+				$("#userContent").val("");
+				alert("added to firebase");
+			}
+
+		});
+
+		firebase.on("child_added", function(snapshot) {
+			var newContent = snapshot.val();
+			boxContent.push(newContent.quote);
+			console.log(boxContent);
+		});
+
+		// myDataRef.on('child_added', function(snapshot) {
+  //       var message = snapshot.val();
+  //       displayChatMessage(message.name, message.text);
+
+
+	</script>
+
+</body>
+</html>
