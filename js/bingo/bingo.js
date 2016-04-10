@@ -1,22 +1,24 @@
 $(document).ready(function() {
 
-//hide the success message
+//hide the success/fail messages
 $("#success").hide();
-//hello firebase
+$("#fail").hide();
+
+//sup firebase
 var firebase = new Firebase("https://slinkeee-js.firebaseIO.com");
 
-//array with the content for the bingo squares
+//starter content for the bingo squares
 var boxContent = [
-	"centers of excellence",
-	"ecosystem",
-	"soup to nuts",
-	"marinate",
-	"unpack",
-	"mindshare",
-	"mission-critical",
-	"talking out loud",
-	"run it up the flagpole",
-	"open kimono",
+	"I'll buy it tomorrow",
+	"duck programming",
+	"whurt der furk",
+	"Hello... Is it me you're looking for",
+	"Namely",
+	"wat",
+	"this is totally legal",
+	"uhhh... gentlemen?",
+	"we're doing it live",
+	"I'm gonna get fired",
 	];
 generateCard()
 
@@ -48,9 +50,11 @@ function generateCard() {
 	function randomizeContent() {
 		var randomIndex;
 		var temp;
-		//a backwards for loop that starts at the end of the array
+		//a backwards loop that starts at the end of the array
 		for (var i = boxContent.length - 1; i >= 0; i--) { 
+		    //pick a random array item
 		    randomIndex = Math.floor(Math.random() * i);
+		    //swap item[i] with the random array item
 		    temp = boxContent[i];
 		    boxContent[i] = boxContent[randomIndex];
 		    boxContent[randomIndex] = temp;
@@ -80,14 +84,24 @@ $("input[name = 'newCard']").on("click", function() {
 //the submit button...
 $("#submit").click(function() {
 	if($("#userContent").val() !== "") {
-		//adds the new input to firebase
 		var userContent = $("#userContent").val();
-		firebase.push({quote: userContent});
 
-		$("#userContent").val("");
-		$("#success").fadeIn(900).fadeOut();
-	}
+		//let's fake some RegEx, that shouhd be fun
+		var allowedCharacters = /^[a-zA-Z0-9-''"",? ]*$/;
 
+		//check if input is too weird to allow
+		if(allowedCharacters.test(userContent) == false) {
+			$("#userContent").val("");
+			$("#fail").fadeIn(1100).delay(500).fadeOut();
+		}
+		else {
+			//adds the new input to firebase
+			firebase.push({quote: userContent});
+
+			$("#userContent").val("");
+			$("#success").fadeIn(1000).fadeOut();
+			}
+		};
 });
 
 //firebase pushes new additions to the boxContent array
@@ -95,7 +109,6 @@ firebase.on("child_added", function(snapshot) {
 	var newContent = snapshot.val();
 	boxContent.push(newContent.quote);
 });
-
 
 
 //when user clicks a box...
@@ -152,5 +165,5 @@ function clearCard() {
 }
 
 
-
 });
+
