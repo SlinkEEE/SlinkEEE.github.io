@@ -1,0 +1,155 @@
+
+body {
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	color: #666;
+}
+
+#header {
+	background-color: #F5F5F5;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 28px;
+	padding: 1em 0 0.25em 0;
+}
+
+h2 {
+	font-size: 22px;
+	padding: 0 0 0.25em 0;
+}
+
+
+p {
+	font-size: 18px;
+	padding: 0 0 2em 0;
+}
+
+
+#container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#gamecard {
+	border-spacing: 10px;
+	border-collapse: separate;
+	float: right;
+	width: 500px;
+	margin-right: 20px;
+}
+
+td {
+    height: 150px;
+    width: 150px;
+    background: #ccc;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    vertical-align: middle;
+    position: static;
+}
+
+td:hover {
+	background-color: #c4f8ff;
+}
+
+.match {
+	background-color: #00DFFF;
+}
+
+.match:hover {
+	background-color: #00DFFF;
+}
+
+#sidebar {
+	display: inline-block;
+	width: 170px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+h3 {
+	margin-bottom: 0;
+	font-size: 16px;
+	line-height: 2em;
+	padding: 5px 0;
+	background-color: #000;
+	color: #DDD;
+}
+
+h4 {
+	font-size: 14px;
+	margin: 0 0 5px 0;
+	text-align: left;
+}
+
+#score {
+	margin: 0 0 20px 0;
+	padding: 25%;
+	background-color: #333;
+	color: #FFF;
+	font: bold 44px Arial;
+}
+
+input {
+	display: block;
+	background-color: #FFF;
+	border: 3px solid #00DFFF;
+	font: bold 16px Arial;
+	line-height: 2em;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 2px 0px 0px 0px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #00DFFF;
+	color: #FFF;
+}
+
+input:focus {
+	outline: none;
+}
+
+#userContent {
+	cursor: default;
+	border: 1px solid #00DFFF;
+	font-weight: normal;
+	text-align: center;
+}
+
+#userContent:hover {
+	cursor: text;
+}
+
+#userContent:focus {
+	cursor: text;
+	border-bottom: 3px solid #00DFFF;
+	margin-bottom: 8px;
+}
+
+#success {
+	background-color: #00ff78;
+	color: #000;
+	font: bold 14px Arial;
+	margin-top: -5px;
+	padding: 5px 0;
+}
+
+#fail {
+	background-color: #ff0047;
+	color: #fff;
+	font: bold 14px Arial;
+	margin-top: -5px;
+	padding: 5px 0;
+}
+
+a {
+	color: #fff;
+	font: bold 16px Arial;
+}

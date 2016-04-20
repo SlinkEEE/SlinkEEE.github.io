@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-//hide the success/fail messages
+//begone, the success/fail messages
 $("#success").hide();
 $("#fail").hide();
 
 //sup firebase
 var firebase = new Firebase("https://slinkeee-js.firebaseIO.com");
 
-//starter content for the bingo squares
+//amazing starter content for the squares
 var boxContent = [
 	"I'll buy it tomorrow",
 	"duck programming",
@@ -20,7 +20,8 @@ var boxContent = [
 	"we're doing it live",
 	"I'm gonna get fired",
 	];
-generateCard()
+
+generateCard();
 
 //array containing arrays of all the winning combos
 //access specific boxes like so: (winners[0][2]) ==> "box2"
@@ -35,18 +36,18 @@ var winners = [
 	["box2", "box4", "box6"]
 ];
 
-//variable to store the number of items in the winners array
+//store the number of items in the winners array
 var bingoCombos = winners.length;
 
-//array to store the boxes that have been clicked
+//store the boxes that have been clicked
 var matched = [];
 
-//variable to store the score count
+//store the score count
 var scoreCount = 0;
 
 function generateCard() {
 
-	//shuffle the contents of the array:
+	//Fisher-Yates-thingy to shuffle the content array
 	function randomizeContent() {
 		var randomIndex;
 		var temp;
@@ -81,12 +82,12 @@ $("input[name = 'newCard']").on("click", function() {
 	generateCard();
 });
 
-//the submit button...
+//OMG the submit button...
 $("#submit").click(function() {
 	if($("#userContent").val() !== "") {
 		var userContent = $("#userContent").val();
 
-		//let's fake some RegEx, that shouhd be fun
+		//let's fake some RegEx, that should be fun
 		var allowedCharacters = /^[a-zA-Z0-9-''"",? ]*$/;
 
 		//check if input is too weird to allow
@@ -95,7 +96,7 @@ $("#submit").click(function() {
 			$("#fail").fadeIn(1100).delay(500).fadeOut();
 		}
 		else {
-			//adds the new input to firebase
+			//add the new input to firebase
 			firebase.push({quote: userContent});
 
 			$("#userContent").val("");
@@ -104,7 +105,7 @@ $("#submit").click(function() {
 		};
 });
 
-//firebase pushes new additions to the boxContent array
+//firebase pushes fabulous new additions to the boxContent array
 firebase.on("child_added", function(snapshot) {
 	var newContent = snapshot.val();
 	boxContent.push(newContent.quote);
@@ -134,7 +135,7 @@ $("td").on("click", function() {
 					}
 				}
 
-				//if there are 3 matches...
+				//HOLLA if there are 3 matches...
 				if(matches == 3) {
 					alert("bingo!");
 					scoreCount++;

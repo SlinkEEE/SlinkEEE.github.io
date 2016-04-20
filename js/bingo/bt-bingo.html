@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lingo Bingo</title>
+
+	<link rel="stylesheet" type="text/css" href="bt-bingostyles.css" />
+	<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="bt-bingo.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+</head>
+
+
+
+<body>
+
+
+<div id="header">
+	<h1>Bobby Tables Lingo Bingo</h1>
+	<h2>... or, WWBS?</h2>
+	<p>Listen for Bobby Tables buzzwords in class. Get three in a row to win!</p>
+</div>
+
+<div id="container">
+
+<div id="sidebar">
+	<input name="newCard" type="submit" value="NEW CARD"></input>
+	<input name="clearCard" type="submit" value="CLEAR CARD"></input>
+	<h3>SCORE</h3>
+	<p id="score">0</p>
+	<h4>ADD SOME BOBBY TABLES LINGO OF YOUR OWN:</h4>
+	<input type="text" id="userContent" placeholder="type yo' jargon"></input>
+	<input type="submit" id="submit" value="SUBMIT"></input>
+	<p id="success">SUCCESS!</p>
+	<p id="fail"><a href="http://imgs.xkcd.com/comics/exploits_of_a_mom.png" target="_blank">EPIC FAIL</a></p>
+</div>
+
+	  	<table id="gamecard">
+		    <tr>
+		     	<td id="box0"></td>
+		     	<td id="box1"></td>
+		     	<td id="box2"></td>
+		    </tr>
+		    <tr>
+		    	<td id="box3"></td>
+		     	<td id="box4"></td>
+		     	<td id="box5"></td>
+		    </tr>
+		    <tr>
+		     	<td id="box6"></td>
+		     	<td id="box7"></td>
+		     	<td id="box8"></td>
+		    </tr>
+		</table>
+</div>
+
+</body>
+
+
+
+</html>
